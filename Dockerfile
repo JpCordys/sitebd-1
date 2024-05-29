@@ -21,4 +21,4 @@ RUN chmod +x mvnw
 RUN ./mvnw clean package
 
 # Run the application
-CMD ["java", "-jar", "target/sitebd-1.jar"]
+CMD ["java", "-jar", "app.jar"]
