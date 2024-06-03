@@ -14,5 +14,5 @@ RUN chmod 777 mvnw
 
 RUN ./mvnw package
 
-ENTRYPOINT ["java", "-jar", "/app/target/sitebd-0.0.1-SNAPSHOT.war "]
+ENTRYPOINT ["java", "-jar", "/app/target/sitebd-0.0.1-SNAPSHOT.war.original"]
 
