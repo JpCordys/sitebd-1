@@ -2,7 +2,10 @@ FROM maven:3.8.4-openjdk-17-slim AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN mvn package -DskipTests
+COPY .mvn .mvn
+COPY mvnw .
+RUN chmod 777 mvnw
+RUN ./mvn package -DskipTests
 
 FROM openjdk:17-alpine
 WORKDIR /app
