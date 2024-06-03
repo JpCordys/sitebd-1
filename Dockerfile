@@ -1,9 +1,18 @@
-FROM openjdk:17-alpine
+FROM openjdk:17-jdk-alpine
+
 WORKDIR /app
+
 COPY pom.xml .
+
 COPY src ./src
-COPY .mvn .mvn
+
 COPY mvnw .
+
+COPY .mvn .mvn
+
 RUN chmod 777 mvnw
-RUN mvn package -DskipTests
+
+RUN ./mvnw package
+
 ENTRYPOINT ["java", "-jar", "/app/target/sitebd-0.0.1-SNAPSHOT.war "]
+
