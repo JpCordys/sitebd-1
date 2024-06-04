@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista Clientes</title>
+	<link rel="stylesheet" href="estiloLista.css"> 
+
+</head>
+<body>
+    <table id="list">
+    	<thead >
+        	<tr>
+            	<td><b>ID</b></td>
+            	<td><b>NOME</b> </td>
+            	<td><b>CPF</b> </td>
+				<td></td>
+				<td></td>
+        	</tr>
+    	</thead>
+    	<tbody>
+        	<tr th:each="cli : ${lista}">
+            	<td th:text="${cli.id}"></td>
+            	<td th:text="${cli.nome}"></td>
+            	<td th:text="${cli.cpf}"></td>
+				<td>
+            		<a th:href="@{'atualizar/' + ${cli.id}}">
+            			Editar
+            		</a>
+					<br>
+					<a id= "edit" class="botao" href="/atualiza.html">Botão Editar</a>
+
+            	</td>
+				<td>
+					<form action="#" th:action="@{'deletar/' + ${cli.id}}" method="post">
+						<input id= "apag" class="botao" type="submit" value="Apagar">
+					</form>
+					<a id= "volt" class="botao" href="/index.html">Voltar Iniciar</a>
+
+				</td>
+				
+
+       		</tr>
+		</tbody>
+		
+
+	</table>
+	<br>
+
+</body>
+</html>

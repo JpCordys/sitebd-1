@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url('https://services.meteored.com/img/article/lua-desgovernada-saiba-de-onde-vieram-os-aneis-de-saturno-1663445923144_1280.jpeg');
+  
+
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+#list{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: rgba(211, 211, 211, 0.438);
+    box-shadow: rgba(50, 50, 93, 0.144) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    position: absolute;
+	top: 25%;
+    left: 50%;
+}
+.botao {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-radius: 9px;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    
+   }
+   
+   
+   .botao:active {
+    transform: scale(0.97);
+   
+   }
+
+   #volt {
+    background: #f8fc09;
+   }
+   #volt:hover {
+    box-shadow: 10px 8px 60px 10px #f6fa04;
+   }
+   #volt:active {
+    box-shadow: 10px 8px 60px -10px #f6fa04;
+   }
+
+   #apag {
+    background: #fc0909;
+   }
+   #apag:hover {
+    box-shadow: 10px 8px 60px 10px #fa0404;
+   }
+   #apag:active {
+    box-shadow: 10px 8px 60px -10px #fa0404;
+   }
+
+   #edit {
+    background: #3afc09;
+   }
+   #edit:hover {
+    box-shadow: 10px 8px 60px 10px #04fa10;
+   }
+   #edit:active {
+    box-shadow: 10px 8px 60px -10px #04fa25;
+   }
+

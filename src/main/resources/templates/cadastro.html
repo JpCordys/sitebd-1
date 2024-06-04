@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Cadastro de cliente</title>
+	<link rel="stylesheet" href="estiloCadastro.css"> 
+
+</head>
+<body>
+	<center><div id="top">Núcleo Astrológico do Sistema de Observação escolha sua ação:</div></center>
+	<center><form id="form" action="#" th:action="@{/cadastrar}" method=post th:object="${cliente}">
+    	Nome: <input type="text" th:field="*{nome}"><br>
+    	CPF: <input type="text" th:field="*{cpf}">
+    	<input class="botao" id="cad" type="submit" value="Cadastrar">
+		<br>
+		<a class="botao" id="volt" href="/index.html">Voltar Iniciar</a>
+	</form>
+	
+	
+</center>
+    
+</body>
+</html>
