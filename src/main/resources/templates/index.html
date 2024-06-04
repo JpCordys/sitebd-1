@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
   <title>Solar System</title>
-   <link href="estiloIndex.css" rel="stylesheet" type="text/css" />
+   <link href="templates/estiloIndex.css" rel="stylesheet" type="text/css" />
    
 </head>
 <body>
@@ -29,8 +29,8 @@
   <div class="object" id="m-orbit"></div>
   <br>
   <center><div id="top">Bem vindo ao N.A.S.O. escolha sua ação:</div></center>
-  <a id="cadastrar" href="/cadastrar">Cadastrar</a>
-  <a id="listar" href="/listar">Ver Listar</a>
+  <a id="cadastrar" th:href="/cadastrar">Cadastrar</a>
+  <a id="listar" th:href="/listar">Ver Listar</a>
 
   <img src="asteroid.png" class="object" alt="" id="belt">
 </body>
